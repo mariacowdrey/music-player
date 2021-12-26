@@ -16,8 +16,13 @@ body {
     justify-content: center;
 }
 
+body a {
+    color: yellow;
+    text-decoration: none;
+}
+
 .music-container {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.514);
     border-radius: 15px;
     box-shadow: 0 20px 20px 0 rgb(182, 182, 182);
     display: flex;
@@ -81,9 +86,9 @@ body {
 }
 
 .action-btn {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0);
     border: 0;
-    color: #dfdbdf;
+    color: #fff;
     font-size: 20px;
     cursor: pointer;
     padding: 10px;
@@ -91,7 +96,7 @@ body {
 }
 
 .action-btn.action-btn-big {
-    color: #cdc2d0;
+    color: #fff;
     font-size: 30px;
 }
 
@@ -100,7 +105,7 @@ body {
 }
 
 .music-info {
-    background-color: rgba(204, 204, 204, 0.877);
+    background-color: rgba(253, 255, 129, 0.726);
     border-radius: 15px 15px 0 0;
     position: absolute;
     top: 0;
@@ -141,4 +146,44 @@ body {
     height: 100%;
     width: 0%;
     transition: width 0.1s linear;
+}
+
+@media screen and (min-width: 768px) {
+    h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+  }
+}
+
+
+@media screen and (min-width: 400px) {
+    h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+  }
+  .music-container {
+   
+    padding: 10px 20px;
+ 
+}
+
+.music-info {    
+    padding: 10px 8px 8px 150px;
+}
+
+.img-container {
+    width: 126px;
+    margin-left: 10px;
+}  
+
+.img-container img {
+    height: 126px;
+}
+
 }
