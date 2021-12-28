@@ -124,7 +124,7 @@ body a {
     cursor: pointer;
     margin: 10px 0 0 5px;
     height: 4px;
-    width: 95%;
+    width: 98.7%;
 
 } 
 
@@ -213,9 +213,13 @@ body a {
     padding: 8px 2px;
   }
 
-.action-btn.action-btn-big {
+ .action-btn.action-btn-big {
     font-size: 16px;
-}
+ }
+ 
+ .progress-container {
+    width: 96%;
+} 
 
 }
 
