@@ -22,11 +22,11 @@ body a {
 }
 
 .music-container {
-    background-color: rgba(255, 255, 255, 0.514);
+    background-color: rgba(211, 211, 211, 0.733);
     border-radius: 15px;
-    box-shadow: 0 20px 20px 0 rgb(182, 182, 182);
+    box-shadow: 0 20px 20px 0 rgb(66, 66, 66);
     display: flex;
-    padding: 20px 30px;
+    padding: 10px 30px;
     position: relative;
     margin: 100px 0;
     z-index: 10;
@@ -37,34 +37,22 @@ body a {
     width: 138px;
 }  
 
-  /* .img-container::after {
-    content: '';
-    background-color: #fff;
-    height: 20px;
-    width: 20px;
-    position: absolute;
-    left: 50%;
-    bottom: 50%;
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-}   */
-
-
 .img-container img {
     width: inherit;
     height: 138px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
+    border-radius: 15%; 
     object-fit: cover;
     position: absolute;
     bottom: 0;
     left: 0;
 
-    animation: rotate 3s linear infinite;
+    /* animation: rotate 3s linear infinite;
 
-    animation-play-state: paused;
+    animation-play-state: paused; */
 }
 
-.music-container.play .img-container img {
+/* .music-container.play .img-container img {
     animation-play-state: running;
 }
 
@@ -76,7 +64,7 @@ body a {
     to {
         transform: rotate(360deg);
     }
-}
+} */
 
 .navigation {
     display: flex;
@@ -88,7 +76,7 @@ body a {
 .action-btn {
     background-color: rgba(255, 255, 255, 0);
     border: 0;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.753);
     font-size: 20px;
     cursor: pointer;
     padding: 10px;
@@ -96,7 +84,7 @@ body a {
 }
 
 .action-btn.action-btn-big {
-    color: #fff;
+    color: rgba(253, 253, 253, 0.89);
     font-size: 30px;
 }
 
@@ -111,7 +99,7 @@ body a {
     top: 0;
     left: 20px;
     width: calc(100% - 40px);
-    padding: 16px 10px 16px 150px;
+    padding: 22px 10px 22px 150px;
     opacity: 0;
     transform: translateY(0%);
     transition: transform 0.3s ease-in, opacity 0.3s ease-in;
@@ -134,9 +122,9 @@ body a {
     background: #fff;
     border-radius: 5px;
     cursor: pointer;
-    margin: 10px 0;
+    margin: 10px 0 0 5px;
     height: 4px;
-    width: 100%;
+    width: 95%;
 
 } 
 
@@ -148,7 +136,7 @@ body a {
     transition: width 0.1s linear;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1050px) {
     h1 {
     display: flex;
     flex-direction: column;
@@ -159,31 +147,76 @@ body a {
 }
 
 
-@media screen and (min-width: 400px) {
+@media screen and (max-width: 650px) {
     h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 25px;
+    font-size: 22px;
   }
   .music-container {
    
     padding: 10px 20px;
  
-}
+  }
 
-.music-info {    
+  .music-info {    
     padding: 10px 8px 8px 150px;
-}
+  }
 
-.img-container {
+  .img-container {
     width: 126px;
     margin-left: 10px;
-}  
+  }  
 
-.img-container img {
+  .img-container img {
     height: 126px;
+  }
+
+}
+
+
+@media screen and (max-width: 490px) {
+    h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+  }
+
+  .music-container {
+    padding: 5px 15px;
+  }
+  
+  .music-info {    
+    padding: 8px 5px 10px 85px; 
+    }
+  
+
+  .music-info h4 {
+      font-size: 0.6em;
+  }
+
+  .img-container {
+    width: 80px;
+    margin-left: 10px;
+  }  
+
+  .img-container img {
+    height: 80px;
+  }
+
+  .action-btn {
+    font-size: 12px;
+    padding: 8px 2px;
+  }
+
+.action-btn.action-btn-big {
+    font-size: 16px;
 }
 
 }
+
+
