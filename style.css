@@ -178,49 +178,45 @@ body a {
 
 
 @media screen and (max-width: 490px) {
-    h1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 14px;
+  h1 {
+    font-size: 28px;
+    text-align: center;
   }
 
-  .music-container {
-    padding: 5px 15px;
-  }
-  
-  .music-info {    
-    padding: 8px 5px 10px 85px; 
-    }
-  
+.music-container {
+  padding: 5px 15px;
+}
 
-  .music-info h4 {
-      font-size: 0.6em;
+.music-info {    
+  padding: 6px 5px 10px 85px; 
   }
 
-  .img-container {
-    width: 80px;
-    margin-left: 10px;
-  }  
 
-  .img-container img {
-    height: 80px;
-  }
+.music-info h4 {
+    font-size: 0.9em;
+}
 
-  .action-btn {
-    font-size: 12px;
-    padding: 8px 2px;
-  }
+.img-container {
+  width: 80px;
+  margin-left: 10px;
+  margin-bottom: 7px;
+}  
 
- .action-btn.action-btn-big {
-    font-size: 16px;
- }
- 
- .progress-container {
-    width: 96%;
+.img-container img {
+  height: 80px;
+}
+
+.action-btn {
+  font-size: 20px;
+  padding: 8px 2px;
+}
+
+.action-btn.action-btn-big {
+  font-size: 24px;
+}
+
+.progress-container {
+  width: 96%;
 } 
 
 }
-
-
